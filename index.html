@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Bliss</title>
+    <meta name="description" content="bistro bliss" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preload" as="image" href="./assets/hero-bg.png" />
+    <link
+      rel="preload"
+      as="style"
+      href="styles.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="flex flex-col h-screen w-full">
+      <header
+        class="w-full py-3 bg-header-bg hidden lg:flex lg:items-center lg:justify-between px-36 font-sans"
+      >
+        <div class="flex items-center space-x-6 text-white font-light">
+          <div class="flex items-center space-x-2">
+            <i class="fa-regular fa-phone"></i>
+            <p class="leading-3">(414)857 - 0107</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="leading-3">yummy@bistrobliss</p>
+          </div>
+        </div>
+        <div class="flex space-x-2">
+          <button
+            href="#"
+            class="flex items-center justify-center text-white bg-[#F9F9F71F] rounded-full p-3"
+            aria-label="twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </button>
+          <button
+            href="#"
+            class="flex items-center justify-center text-white bg-[#F9F9F71F] rounded-full p-3"
+            aria-label="facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+          <button
+            href="#"
+            class="flex items-center justify-center text-white bg-[#F9F9F71F] rounded-full p-3"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </button>
+          <button
+            href="#"
+            class="flex items-center justify-center text-white bg-[#F9F9F71F] rounded-full p-3"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </button>
+        </div>
+      </header>
+      <nav
+        class="w-full py-6 bg-[#F9F9F7] flex items-center justify-between px-4 md:px-36 font-sans"
+      >
+        <div class="flex items-center">
+          <div class="flex items-center space-x-3">
+            <img src="./assets/logo.svg" alt="logo" />
+            <h1 class="italic text-3xl font-display font-medium text-header-bg">
+              Bistro Bliss
+            </h1>
+          </div>
+        </div>
+        <div
+          class="hidden lg:flex items-center space-x-2 font-sans text-foreground"
+        >
+          <a
+            href="#"
+            class="inline-flex p-2 px-4 rounded-full nav-link bg-transparent transition-all duration-200 isActive"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="inline-flex p-2 px-4 rounded-full nav-link bg-transparent transition-all duration-200"
+            >About</a
+          >
+          <a
+            href="#"
+            class="inline-flex p-2 px-4 rounded-full nav-link bg-transparent transition-all duration-200"
+            >Menu</a
+          >
+          <a
+            href="#"
+            class="inline-flex p-2 px-4 rounded-full nav-link bg-transparent transition-all duration-200"
+            >Pages</a
+          >
+          <a
+            href="#"
+            class="inline-flex p-2 px-4 rounded-full nav-link bg-transparent transition-all duration-200"
+            >Contact</a
+          >
+        </div>
+        <button
+          href="#"
+          class="text-foreground bg-transparent border-2 min-w-fit border-foreground rounded-full hover:bg-foreground hover:text-white transition-colors duration-300 p-3 px-5"
+        >
+          Book a Table
+        </button>
+      </nav>
+      <main class="hero flex-grow bg-cover">
+        <section
+          class="w-full h-full flex flex-col justify-center items-center gap-12"
+        >
+          <h1
+            class="text-9xl font-light font-display text-center text-foreground"
+          >
+            Best food for <br />
+            your taste
+          </h1>
+          <p class="text-xl font-light text-center text-foreground">
+            Discover delectable cuisine and unforgettable moments <br />
+            in our welcoming, culinary haven.
+          </p>
+          <div class="flex gap-4">
+            <button
+              href="#"
+              class="text-white bg-red-700 min-w-fit rounded-full hover:bg-red-500 transition-colors duration-300 p-4 px-8"
+            >
+              Book a Table
+            </button>
+            <button
+              href="#"
+              class="text-foreground bg-transparent border-2 border-foreground min-w-fit rounded-full hover:bg-foreground hover:text-white transition-colors duration-300 p-4 px-8"
+            >
+              Explore Menu
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="index.js" defer></script>
+</html>
